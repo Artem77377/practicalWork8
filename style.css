@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+	background-size: cover;
+	margin:0;
+}
+div {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background: linear-gradient(to bottom, #4d4c4c,#ff1111);
+	width:100%;
+	min-height: 100%;
+	margin: auto;
+}
+button {
+	color: white;
+    display: block;
+    margin: 0 auto;
+	width:45vw;
+	max-width: 600px;
+	height: 10vw;
+	font-size: 5vw;
+	border-radius: 20px;
+	border: 0px solid transparent;
+	background-color: red;
+	box-shadow: 0 0 45px 30px rgb(0, 0, 0);
+	z-index: 0;
+}
+p {	
+	text-align:center;
+	font-size:5vw;
+	width: 70vw;
+	color:white;
+	margin: 5;
+}
+form{
+	font-size:30;
+	margin: 30px auto;
+}
+.contain{
+	justify-content: center;
+	margin:0;
+	background:none;
+	background-color: transparent;
+    flex-direction:row;
+}
+.userComputer{
+	font-size: 4vw;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	background:none;
+	background-color: red;
+	border-radius: 50%;
+	width: 25%;
+	aspect-ratio: 1 / 1;
+	box-shadow: 0 0 45px 30px rgb(63, 62, 62);
+	
+}
+.anim{
+	animation: shake 0.3s;
+}
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-50px); }
+  40%  { transform: translateX(50px); }
+  60%  { transform: translateX(-50px); }
+  80%  { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
