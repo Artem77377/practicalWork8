@@ -3,6 +3,7 @@
   let correct = false;
   let person, personName;
   while(!correct){
+    if(correct)break;
     person= prompt("Будь ласка, введіть своє ім'я", "Артем");
     personName = person.trim();
     if(personName ==""){
@@ -80,4 +81,5 @@
     score.innerHTML = "Рахунок: "+ player+ " – " + computer;
     if(computer == 3) score.innerHTML += "<br>На жаль, Ви програли(";
     else if(player == 3) score.innerHTML += "<br>Вітаю, Ви перемогли!";
+
   }
